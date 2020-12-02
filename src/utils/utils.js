@@ -47,3 +47,8 @@ export function compareObjects(o, p) {
     }
     return true;
 }
+
+// сравнение с типом и порядком элементов
+export function compareArrays(a1, a2) {
+    return a1.length === a2.length && a1.every((v,i) => v === a2[i]);
+}

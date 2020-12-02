@@ -1,10 +1,10 @@
 import React from "react";
 import ChildRegular from "./ChildRegular";
 import ChildPure from "./ChildPure";
-import { compareObjects } from "./utils/utils";
+import { compareObjects } from "../utils/utils";
 
 // т.к работа с объектами-тут extends pureComponent не даст ожидаемого рез-та
-class Parent extends React.Component {  
+class ParentWithObject extends React.Component {  
     constructor(props) {
         super(props)
         this.state = {
@@ -48,4 +48,4 @@ class Parent extends React.Component {
     }
 }
 
-export default Parent
+export default ParentWithObject
