@@ -5,7 +5,7 @@ import { compareArrays } from "../utils/utils";
 
 const incomingArr = [65, 66, 67];
 
-// т.к работа с объектами-тут extends pureComponent не даст ожидаемого рез-та
+// т.к работа с массивами-тут extends pureComponent не даст ожидаемого рез-та
 class ParentWithArray extends React.Component {  
     constructor(props) {
         super(props)
